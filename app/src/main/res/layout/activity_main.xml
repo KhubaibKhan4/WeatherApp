@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Search CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Weather CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="18dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Location -->
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multan, Punjab, Pakistan"
+                android:textSize="24sp" />
+
+            <!-- Last Updated -->
+            <TextView
+                android:id="@+id/lastUpdatedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Updated: 2023-05-10 19:30"
+                android:textSize="14sp" />
+
+            <!-- Weather Condition Icon -->
+            <ImageView
+                android:id="@+id/weatherIconImageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_weather" />
+
+            <!-- Temperature -->
+            <TextView
+                android:id="@+id/temperatureTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="34°C"
+                android:textSize="48sp" />
+
+            <!-- Weather Condition Text -->
+            <TextView
+                android:id="@+id/weatherConditionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mist"
+                android:textSize="18sp" />
+
+            <!-- Additional Weather Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Wind Speed -->
+                <TextView
+                    android:id="@+id/windSpeedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wind: 3.6 kph"
+                    android:textSize="16sp"/>
+                <!-- Pressure -->
+                <TextView
+                    android:id="@+id/pressureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure: 1004.0 mb"
+                    android:textSize="16sp" />
+
+                <!-- Humidity -->
+                <TextView
+                    android:id="@+id/humidityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity: 28%"
+                    android:textSize="16sp" />
+
+                <!-- Cloud -->
+                <TextView
+                    android:id="@+id/cloudTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cloud: 25%"
+                    android:textSize="16sp" />
+
+                <!-- Feels Like -->
+                <TextView
+                    android:id="@+id/feelsLikeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feels Like: 32°C"
+                    android:textSize="16sp" />
+
+                <!-- Visibility -->
+                <TextView
+                    android:id="@+id/visibilityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visibility: 4.0 km"
+                    android:textSize="16sp" />
+
+                <!-- UV Index -->
+                <TextView
+                    android:id="@+id/uvIndexTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UV Index: 1.0"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
